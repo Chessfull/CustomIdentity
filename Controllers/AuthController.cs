@@ -10,7 +10,7 @@ using RegisterRequest = CustomIdentity.Models.RegisterRequest;
 
 namespace CustomIdentity.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/v1")]
     [ApiController]
     public class AuthController : ControllerBase
     {
