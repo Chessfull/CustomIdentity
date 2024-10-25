@@ -9,13 +9,13 @@
   
 ### Costumizable Parts
 
-```javascript
+```JSON
 "ConnectionStrings": {
   "default": "server=yourservername; database=databasename; Trusted_Connection=True;TrustServerCertificate=True;" // (Last two parts for sql server security)
 }
 ```
 
-```javascript
+```JSON
 "Jwt": {
   "SecretKey": "your-secret-key",
   "Issuer": "your-issuer",
@@ -34,7 +34,7 @@ dotnet ef database update
 dotnet run
 ```
 - Register User -> POST /api/v1/auth/register
-```javascript
+```JSON
 //Request body
 {
   "email": "user@example.com",
@@ -46,7 +46,7 @@ dotnet run
 
 
 - Login User -> POST /api/v1/auth/login
-```javascript
+```JSON
 //Request body
 {
   "email": "user@example.com",
