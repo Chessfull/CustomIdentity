@@ -9,13 +9,13 @@
   
 ### Costumizable Parts
 
-```sh
+```javascript
 "ConnectionStrings": {
   "default": "server=yourservername; database=databasename; Trusted_Connection=True;TrustServerCertificate=True;" // (Last two parts for sql server security)
 }
 ```
 
-```sh
+```javascript
 "Jwt": {
   "SecretKey": "your-secret-key",
   "Issuer": "your-issuer",
@@ -25,16 +25,16 @@
 ```
 ### Steps
 - Create migrations and update database
-```sh
+```terminal
 dotnet ef migrations add InitialCreate // (this name is customizable but best practise for first migration using 'Initial', 'InitialCreate' etc.)
 dotnet ef database update
 ```
 - Running, testing api on Swagger or postman what you prefer
-```sh
+```terminal
 dotnet run
 ```
 - Register User -> POST /api/v1/auth/register
-```sh
+```javascript
 //Request body
 {
   "email": "user@example.com",
@@ -46,7 +46,7 @@ dotnet run
 
 
 - Login User -> POST /api/v1/auth/login
-```sh
+```javascript
 //Request body
 {
   "email": "user@example.com",
